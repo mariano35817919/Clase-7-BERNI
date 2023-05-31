@@ -1,0 +1,39 @@
+/* forma de ordenar nuestros elementos dentro de nuestra pagina especifica */
+body{
+    background-color: aqua;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* damos estas propiedades generales para que las medidas que demos despues puedan ser exactas */
+}
+/* flex: es responsivo. en la medida que achique o aumente el dispositivo que utilizo flex automaticamente se adapta al dispositivo */
+/* diaplay es la propiedad que me permite ver de cierta manera determinados elementos(chequear display en alguna pagina para entender bien los diferentes atributos que tiene.
+flex: quiero que contenedor padre se muestre de forma flexible, en este caso div es un elemento en bloque y cada hijo se ve uno abajo del otro, cuando usamos esta propiedad cada hijo se pone uno al lado del otro, poniendolos en fila*/
+.contenedorPadre{
+            display:flex;
+            padding: 20px;
+            background: olive;
+            /* vamos a probar la propiedad flex direccion para empezar con flex box: cual va a ser la direccion que queres tomar para todos estos elementos hijos, usamos flex direccion row, con este atributo no se ven cambios porque justamente con display flex ya se cambio la pripiedad 35 */
+            flex-direction: row;
+            /* el segundo elemento que puedo acomodar es flex direccion colum, nos muestra los elementos en columna */
+            flex-direction: column;
+            /* flex direccion row rever. Es otro de los elementos que me los muestra de forma inversa o sea desde el 12 */
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            /* otra propiedad seria flex wrap: no salta de linea cuando el dispositibo cambia*/
+            flex-wrap:nowrap;
+            flex-wrap: wrap;/* salta de linea cuando el dispositivo es mas pequeño */
+}
+.contenedorPadre div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* vamos a tratar ahora de darle bordes a las cajas */
+            border: solid black 1px;
+            font-size: 30px;
+            text-align: center;
+            margin: 15px;
+
+}
