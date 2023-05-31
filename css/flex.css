@@ -25,6 +25,25 @@ flex: quiero que contenedor padre se muestre de forma flexible, en este caso div
             /* otra propiedad seria flex wrap: no salta de linea cuando el dispositibo cambia*/
             flex-wrap:nowrap;
             flex-wrap: wrap;/* salta de linea cuando el dispositivo es mas pequeño */
+            flex-wrap: wrap-reverse;/* salta de linea y me invierte las filas */
+            justify-content: flex-start;/*inicia los elementos a la izquierda o en left, con esta arranca por defaull despues de poner flex display por eso no se notn cambios */
+            justify-content: flex-end;/* me los tira a la derecha */
+            justify-content: center;/* ubica los elementos en el centro */
+
+            justify-content: space-around;/* separa los elementos de forma automatica dandole directamente el mismo flexbox, el margin de separacion automatico segun lo elemento que estamos tenendo desntro de ese cntenedor padre . Me da una separacion de x pixeles . Separa automaticamente los elementos*/
+            justify-content: space-between;/* deja primer elemento y ultimo mucho mas cerca del righ y del left */
+
+            justify-content: space-evenly;/* tambien me da mas margen a la izquierda y a la derecha */
+
+            align-content: end;/* alineame los contenidos a final */
+            align-content: center;
+            align-content:start;
+
+
+            align-items: end;/* alineame todos los items al final */
+            align-items: center;
+
+            height: 600px;
 }
 .contenedorPadre div{
             width: 100px;
@@ -34,6 +53,5 @@ flex: quiero que contenedor padre se muestre de forma flexible, en este caso div
             border: solid black 1px;
             font-size: 30px;
             text-align: center;
-            margin: 15px;
-
+            /*margin: 15px; */
 }
